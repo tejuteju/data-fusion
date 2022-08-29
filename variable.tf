@@ -31,3 +31,6 @@ variable "enable_logging" {
 variable "private_instance" {
   type=bool
 }
+variable "df_version"{
+  type = string
+}
