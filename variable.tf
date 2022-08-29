@@ -22,9 +22,6 @@ variable "edition" {
 variable "private_ip_range" {
   type = string
 }
-variable "df_version" {
-  type=string
-}
 variable "label_value" {
   type=string
 }
