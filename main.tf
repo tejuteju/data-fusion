@@ -52,6 +52,6 @@ resource "google_data_fusion_instance" "data-fusion-private-instance" {
   }
   labels = {
     example_key = var.label_value
-  }
+  } 
   dataproc_service_account = google_service_account.dataproc_sa.email
 }
