@@ -28,9 +28,7 @@ variable "label_value" {
 variable "enable_logging" {
   type = bool
 }
-variable "private_instance" {
-  type=bool
-}
+
 variable "df_version"{
   type = string
 }
