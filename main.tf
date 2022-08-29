@@ -50,7 +50,6 @@ resource "google_data_fusion_instance" "data-fusion-private-instance" {
     network                     = google_compute_network.custom-test.name
     ip_allocation               = var.private_ip_range
   }
-  version = var.df_version
   labels = {
     example_key = var.label_value
   }
