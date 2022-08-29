@@ -9,7 +9,7 @@ variable "network" {
 }
 variable "sub_network" {
   type=string
-}
+} 
 variable "region" { 
   type=string
 } 
