@@ -37,7 +37,7 @@ resource "google_compute_subnetwork" "df-subnet" {
   name          = var.sub_network
   ip_cidr_range = "10.2.0.0/16"
   region        = var.region
-  network       = google_compute_network.custom-test.id
+  network       = google_compute_network.custom-test.id 
 }
 
 resource "google_data_fusion_instance" "data-fusion-private-instance" {
