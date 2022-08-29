@@ -10,7 +10,7 @@ variable "network" {
 variable "sub_network" {
   type=string
 }
-variable "region" {
+variable "region" { 
   type=string
 } 
 variable "df_instance" {
