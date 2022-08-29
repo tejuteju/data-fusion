@@ -45,7 +45,6 @@ resource "google_data_fusion_instance" "data-fusion-private-instance" {
   region                        = var.region
   type                          = var.edition
   enable_stackdriver_logging    = var.enable_logging
-  private_instance              = var.private_instance
   network_config {
     network                     = google_compute_network.custom-test.name
     ip_allocation               = var.private_ip_range
