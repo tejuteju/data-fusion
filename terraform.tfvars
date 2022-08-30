@@ -1,6 +1,6 @@
 project_id = "spatial-ship-354209"
 sa="dataproc-cluster-sa"
-network = "df-network"
+network = "wf-us-prod-vpc-app01-subnet1"
 sub_network = "df-subnetwork"
 region = "us-central1"
 df_instance = "data-fusion-private-instance"
