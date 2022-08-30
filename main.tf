@@ -32,6 +32,7 @@ resource "google_service_account_iam_member" "datafusion_user_dataproc_sa" {
 resource "google_compute_network" "custom-test" {
   name                    = var.network
   auto_create_subnetworks = false
+  delete_default_routes_on_create = true
 }
 resource "google_compute_subnetwork" "df-subnet" {
   name          = var.sub_network
