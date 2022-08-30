@@ -4,12 +4,12 @@ variable "project_id" {
 variable "sa" {
   type=string
 }
-variable "network" {
+/*variable "network" {
   type=string
 }
 variable "sub_network" {
   type=string
-}
+}*/
 variable "region" { 
   type=string
 } 
@@ -19,9 +19,9 @@ variable "df_instance" {
 variable "edition" {
   type=string
 }
-variable "private_ip_range" {
+/*variable "private_ip_range" {
   type = string
-}
+}*/
 variable "label_value" {
   type=string
 }
