@@ -29,7 +29,7 @@ resource "google_service_account_iam_member" "datafusion_user_dataproc_sa" {
   role               = "roles/iam.serviceAccountUser"
   member             = "serviceAccount:service-${data.google_project.project.number}@gcp-sa-datafusion.iam.gserviceaccount.com"
 }
-resource "google_compute_network" "custom-test" {
+/*resource "google_compute_network" "custom-test" {
   name                    = var.network
   auto_create_subnetworks = false
   delete_default_routes_on_create = true
@@ -39,17 +39,17 @@ resource "google_compute_subnetwork" "df-subnet" {
   ip_cidr_range = "10.2.0.0/16"
   region        = var.region
   network       = google_compute_network.custom-test.id 
-}
+}*/
 
 resource "google_data_fusion_instance" "data-fusion-private-instance" {
   name                          = var.df_instance
   region                        = var.region
   type                          = var.edition
   enable_stackdriver_logging    = var.enable_logging
-  network_config {
+  /*network_config {
     network                     = google_compute_network.custom-test.name
     ip_allocation               = var.private_ip_range
-  }
+  }*/
   private_instance=var.private_instance
   version=var.df_version
   labels = {
